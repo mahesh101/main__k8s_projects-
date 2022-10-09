@@ -1,0 +1,21 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+	    {
+        "Effect": "Allow",
+        "Action": ["s3:ListBucket",
+                 "s3:createBucket",
+                 "s3:deleteBucket"
+        ],
+        "Resource" : "*"
+        
+       },
+        {
+            "Effect": "Allow",
+            "Action": [
+               "sts:AssumeRole"
+            ],
+            "Resource": "arn:aws:iam::184135668130:role/mahesh_testing-role"
+        }
+    ]
+}
